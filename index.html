@@ -1,14 +1,154 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Seminário #8</title>
+    <style>
+        /* Estilos gerais */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-spacing: 0;
+            border-collapse: collapse;
+            max-width: 900px;
+            min-width: 300px;
+            margin: 0 auto;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            border: 0;
+        }
+
+        h1 {
+            text-indent: 5%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            margin-top: auto;
+            margin-bottom: 20px;
+        }
+
+        .container {
+            margin: 0 auto;
+            background-color: #ffffff;
+            width: 900px;
+        }
+
+        .footer {
+            background-color: #293a66;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .footer a {
+            color: #2199e8;
+    text-decoration: underline;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    padding: 30px 0; /* Adiciona espaçamento vertical */
+}
+
+        /* Responsividade */
+        @media only screen and (max-width: 596px) {
+            .container {
+                width: 95%;
+            }
+
+            .columns {
+                width: 100%;
+                display: block;
+                padding: 16px;
+            }
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+
+        /* Preheader oculto */
+        .preheader {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            color: transparent;
+            height: 0;
+            overflow: hidden;
+            max-height: 0;
+            max-width: 0;
+            font-size: 0;
+            line-height: 0;
+        }
+    </style>
 </head>
+
 <body>
-    <header>
-        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, quae pariatur. Consequuntur iste nam facilis sint quibusdam aspernatur maxime. Tempore fugiat adipisci quibusdam voluptates repellendus ipsa placeat harum magnam earum?</h1>
-        <img src="images/[Seminario]Online_#8_Agradecimento_ONLINE_PRESENCIAL_01.jpg" alt="aaa">
-    </header>
+    <!-- Preheader: texto inicial oculto nos emails -->
+    <div class="preheader">
+        Insira aqui o texto de pré-visualização do email.
+    </div>
+
+    <!-- Estrutura do email -->
+    <table class="container">
+        <!-- Cabeçalho -->
+        <tr>
+            <td>
+                <img src="https://github.com/CesarAmoedo/dev/blob/main/imagens/%5BSeminario%5DOnline_%238_Agradecimento_ONLINE_PRESENCIAL_01.jpg?raw=true" alt="Imagem Cabeçalho">
+                <h1>
+                    Olá, {{nome_email}}
+                </h1>
+            </td>
+        </tr>
+
+        <!-- Conteúdo principal -->
+        <tr>
+            <td>
+                <img src="https://github.com/CesarAmoedo/dev/blob/main/imagens/%5BSeminario%5DOnline_%238_Agradecimento_ONLINE_PRESENCIAL_03.jpg?raw=true" alt="Imagem Seção 1">
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <table>
+                    <tr>
+                        <td class="columns">
+                            <a href="http://seminariointernacional.institutounibanco.org.br/">
+                                <img src="https://github.com/CesarAmoedo/dev/blob/main/imagens/%5BSeminario%5DOnline_%238_Agradecimento_ONLINE_PRESENCIAL_04.jpg?raw=true" alt="Link 1">
+                            </a>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+
+        <!-- Imagem final -->
+        <tr>
+            <td>
+                <img src="https://github.com/CesarAmoedo/dev/blob/main/imagens/%5BSeminario%5DOnline_%238_Agradecimento_ONLINE_PRESENCIAL_05.jpg?raw=true"
+                    alt="Imagem Final">
+            </td>
+        </tr>
+    </table>
+
+    <!-- Rodapé -->
+    <table class="container footer">
+        <tr>
+            <td>
+                <a href="#">
+                    Cancelar assinatura de todos os emails
+                </a>
+            </td>
+        </tr>
+    </table>
 </body>
+
 </html>
